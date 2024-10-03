@@ -12,7 +12,13 @@
   <body>
     <h1>Módulo 1 - Primeiros Passos com HTML</h1>
     <hr />
-
+    <p>
+      O elemento &lt;mark&gt; é usado para <mark>destacar</mark> partes do texto
+    </p>
+    <blockquote cite="http://developer.mozilla.org">
+      <p>Esta é uma citação tirada da Mozilla Developer Center.</p>
+    </blockquote>
+    
     <h2 id="indice">Índice</h2>
     <ul>
       <li><a href="#historiaCompu">História dos computadores</a></li>
@@ -35,16 +41,20 @@
     <p>
       Temos 5ª geração de computadores, ao longo das décadas que foram se
       desenvolvendo cada vez mais, acredito que estamos dando início a 5ª
-      geração com o avanço da tecnologia principalmente a IA.
+      geração com o avanço da tecnologia principalmente a
+      <abbr title="Inteligência Artificial">IA</abbr> .
       <br />
       Como surgiu a internet? Bem na escola aprendemos sobre a guerra fria, onde
       o mundo foi dividido entre capitalismo e socialismo. Durante esses
-      conflitos a rede, fundada nos EUA inicialmente chamada Arpanet, foi criada
-      pela Darpa para facilitar o compartilhamento de informações e a
-      comunicação entre diferentes sistemas de computador. A internet surgiu a
-      partir de inovações para proteger as comunicações e informações. A
-      popularização da internet ocorreu com o desenvolvimento da World Wide Web
-      (WWW), criada por Tim Berners-Lee, e do navegador Mosaic.
+      conflitos a rede, fundada nos <abbr title="Estados Unidos da America">EUA</abbr> inicialmente chamada
+      <abbr title="Advanced Research Projects Agency Network">Arpanet</abbr>,
+      foi criada pela
+      <abbr title="Defense Advanced Research Projects Agency">Darpa</abbr> para
+      facilitar o compartilhamento de informações e a comunicação entre
+      diferentes sistemas de computador. A internet surgiu a partir de inovações
+      para proteger as comunicações e informações. A popularização da internet
+      ocorreu com o desenvolvimento da World Wide Web (WWW), criada por Tim
+      Berners-Lee, e do navegador Mosaic.
     </p>
     <p>
       <small><a href="#indice">Voltar ao Topo</a></small>
@@ -56,16 +66,16 @@
       envia uma mensagem para o servidor, solicitando um determinado recurso
       (por exemplo, uma página web). O servidor processa a solicitação: O
       servidor recebe a solicitação, localiza o recurso solicitado e o prepara
-      para ser enviado. O servidor envia a resposta: O servidor envia a resposta
+      para ser enviado. <mark>O servidor envia a resposta</mark>: O servidor envia a resposta
       ao cliente, que pode ser uma página web, um arquivo, uma imagem, etc. O
-      cliente exibe a resposta: O cliente recebe a resposta e a exibe para o
+      cliente exibe a resposta: <mark>O cliente recebe a resposta</mark> e a exibe para o
       usuário. <br />
-      O cache é uma ferramenta fundamental para otimizar o desempenho dos
+      O <mark>cache</mark> é uma ferramenta fundamental para otimizar o desempenho dos
       computadores. Ao armazenar temporariamente dados frequentemente acessados,
       ele reduz o tempo de acesso aos dados e melhora a experiência do usuário.
       <br />
       Designer responsivo: É a pessoa que cria designs responsivos.
-      Responsividade: É a característica de um design que se adapta a diferentes
+      <mark>Responsividade</mark>: É a característica de um design que se adapta a diferentes
       telas.
       <br />
       O que são aplicações web? Em poucas palavras, aplicações web são programas
@@ -93,23 +103,42 @@
 
     <h2 id="estrutura">Como é uma estrutura básica de um HTML?</h2>
     <p>
-      <'!DOCTYPE html>: Declara o tipo de documento, informando ao navegador que
-      se trata de um documento HTML5. <br />
-      <'html>: É a raiz de todo documento HTML, englobando todo o conteúdo. O
-      atributo lang="pt-br" indica que o idioma principal do documento é o
-      português do Brasil. <br />
-      <'head>: Contém informações sobre o documento, como o título, metadados e
-      links para arquivos externos (como CSS). <br />
-      <'title>: Define o título da página, que aparece na aba do navegador.
+      <strong>&lt;!DOCTYPE html&gt;</strong>: Declara o tipo de documento, informando
+      ao navegador que se trata de um documento HTML5. <br />
+      <strong>&lt;html&gt;</strong>: É a raiz de todo documento HTML, englobando todo
+      o conteúdo. O atributo lang="pt-br" indica que o idioma principal do
+      documento é o português do Brasil. <br />
+      <strong>&lt;head&gt;</strong>: Contém informações sobre o documento, como o
+      título, metadados e links para arquivos externos (como CSS). <br />
+      <strong>&lt;title&gt;</strong>: Define o título da página, que aparece na aba
+      do navegador.
       <br />
-      <'meta charset="UTF-8">: Especifica o conjunto de caracteres utilizado no
-      documento, garantindo que caracteres especiais sejam exibidos
-      corretamente. <br />
-      <'body>: Contém o conteúdo visível da página, ou seja, tudo o que o
-      usuário verá na tela. <br />
-      <'h1>: Define um título de nível 1, o mais importante. Existem outros
-      níveis de títulos (<'h2>, <'h3>, etc.). <br />
-      <'p>: Define um parágrafo.
+      <strong>&lt;meta charset="UTF-8"&gt;</strong>: Especifica o conjunto de
+      caracteres utilizado no documento, garantindo que caracteres especiais
+      sejam exibidos corretamente. <br />
+      <strong>&lt;body&gt;</strong>: Contém o conteúdo visível da página, ou seja,
+      tudo o que o usuário verá na tela. <br />
+      <strong>&lt;h1&gt;</strong> : Define um título de nível 1, o mais importante.
+      Existem outros níveis de títulos (&lt;h2&gt;, &lt;h3&gt;, etc.). <br />
+      <strong>&lt;p&gt;</strong>: Define um parágrafo.
+    </p>
+    <p>
+      <pre>
+        <code>
+          &lt;!DOCTYPE html&gt;
+          &lt;html lang="pt-BR"&gt;
+          &lt;head&gt;
+            &lt;meta charset="UTF-8"&gt;
+            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+            &lt;title&gt;Document&lt;/title &gt;
+          &lt;/head&gt;
+          &lt;body&gt;
+            &lt;h1&gt;Titulo Maior&lt;/h1&gt;
+            &lt;p&gt;Paragrafo&lt;/p&gt;
+          &lt;/body&gt;
+          &lt;/html&gt;
+        </code>
+      </pre>
     </p>
     <p>
       <small><a href="#indice">Voltar ao Topo</a></small>
@@ -119,16 +148,42 @@
       Entendendo a diferença entre listas ordenadas e não ordenadas
     </h2>
     <p>
-      Listas Ordenadas (<'ol>) Itens numerados: Cada item da lista possui um
-      número, indicando sua posição na sequência. Ordem importante: A ordem dos
+      Listas Ordenadas (&lt;ol&gt;) Itens numerados: Cada item da lista possui um
+      número, indicando sua <mark>posição na sequência</mark>. Ordem importante: A ordem dos
       itens é significativa e a numeração reflete essa ordem. Uso: Ideal para
       listas de passos, rankings, cronologias, etc.
+      <ol>
+        <li>Primeiro lugar</li>
+        <li>Segundo lugar</li>
+        <li>Terceiro lugar</li>
+      </ol>
       <br />
-      Listas Não Ordenadas (<'ul>) Itens com marcadores: Cada item é precedido
-      por um marcador, geralmente um ponto ou um círculo. Ordem não importante:
+      Listas Não Ordenadas (&lt;ul&gt;) Itens com marcadores: Cada item é precedido
+      por um marcador, geralmente um <mark>ponto ou um círculo</mark>. Ordem não importante:
       A ordem dos itens não tem um significado específico. Uso: Ideal para
       listas de itens não relacionados por ordem, como itens de um menu,
       características de um produto, etc.
+      <ul>
+        <li>Arroz</li>
+        <li>Café</li>
+        <li>Açucar</li>
+      </ul>
+    </p>
+    <p>
+      Estrutura Ordenada
+      <pre><code>
+        &lt;ol&gt;
+        &lt;li&gt;Item 1&lt;/li&gt;
+        &lt;li&gt;Item 2&lt;/li&gt;
+        &lt;/ol&gt;
+        </code></pre>
+      Estrutura não Ordenada
+      <pre><code>
+        &lt;ul&gt;
+        &lt;li&gt;Item 1&lt;/li&gt;
+        &lt;li&gt;Item 2&lt;/li&gt;
+        &lt;/ul&gt;
+      </code></pre>
     </p>
     <p>
       <small><a href="#indice">Voltar ao Topo</a></small>
