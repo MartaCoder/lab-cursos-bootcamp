@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .row {
+        margin: 5px;
+      }
+      label {
+        width: 100px;
+        text-align: right;
+        display: inline-block;
+        padding-right: 5px;
+      }
+      fieldset {
+        margin: 15px 0;
+        border-radius: 15px;
+        border-color: darkslategrey;
+      }
+    </style>
+    <title>Formulário</title>
+  </head>
+  <body>
+    <h1>Formulário de cadastro</h1>
+    <fieldset>
+      <legend>Dados pessoais</legend>
+      <div class="row">
+        <label>Nome: </label><input type="text" />
+
+        <label>E-mail</label><input type="email" />
+      </div>
+      <div class="row">
+        <label>Cargo: </label>
+        <select name="profissao" id="">
+          <option value="">Selecione</option>
+          <option value="gerente">Gerente</option>
+          <option value="colaborado">Colaborador</option>
+          <option value="supervisor">Supervisor</option>
+        </select>
+
+        <label for="">Empresa: </label><input type="text" />
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Endereço</legend>
+      <div class="row">
+        <label>Endereço: </label><input type="text" /> <label>Número: </label
+        ><input style="width: 30px" type="text" width="10" />
+      </div>
+
+      <div class="row">
+        <label for="">Cidade/UF: </label><input type="text" />
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Informações de contato</legend>
+      <div class="row">
+        <label for="">Celular: </label><input type="text" />
+        <label for="">Whatsapp:</label><input type="text" />
+      </div>
+
+      <div class="row">
+        <label for="">Linkedin: </label><input type="text" />
+        <label for="">Github: </label><input type="text" />
+      </div>
+    </fieldset>
+    <div class="row">
+      <button type="reset">Limpar</button>
+      <button type="submit">Enviar</button>
+    </div>
+  </body>
+</html>
