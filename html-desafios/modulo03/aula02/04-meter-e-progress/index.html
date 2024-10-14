@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <meter max="100" min="0" value="50"></meter>
+    <hr />
+    <progress id="progress" max="100" min="0" value="0"></progress>
+
+    <script>
+      var progress = document.getElementById("progress");
+      const interval = setInterval(() => {
+        progress.value += 10;
+        if (progress.value >= 100) {
+          alert("Carregamento 100%");
+          clearInterval(interval);
+        }
+      }, 1000);
+    </script>
+  </body>
+</html>
