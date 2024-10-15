@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*[atributo]
+        [atributo= "valor"]
+        [atributo~= "valor"] //palara searada por espaço
+        [atributo|="valor"]
+      */
+      [title|="strean"] {
+        color: red;
+      }
+
+        /* [href$="login"]{
+             [href*="LOGIN"]{
+        */      
+      [href^="http://"]{
+        background: grey;
+      }
+
+      [title="Spotify"] {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Seletores CSS</h1>
+    <p>Bem-vindo!</p>
+    <p>No CSS nós possuímos os seletores por ID</p>
+    <div>
+      <ul>
+        <li>
+          <a title="strean-Netflix" href="http://www.netflix.com/br-en/"
+            >Netflix</a
+          >
+        </li>
+        <li>
+          <a
+            title="Prime-strean"
+            href="http://www.primevideo.com/offers/nonprimehomepage/ref=dv_web_force_root"
+            >Prime Vídeo</a
+          >
+        </li>
+        <li>
+          <a title="Spotify" href="https://open.spotify.com/intl-pt">Spotify</a>
+        </li>
+        <li>
+          <a> Disney Plus </a>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
