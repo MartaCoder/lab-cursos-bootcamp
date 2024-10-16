@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trinha CSS</title>
+    <style>
+      /*
+     li {
+        color: red;
+      }
+      li li {
+        color: rgb(41, 97, 50);
+      }
+      #list-01 li {
+        background: rgb(136, 196, 216);
+      }
+    */
+      .fundo-verde li {
+        background: lightblue;
+      }
+      .fundo-azul li {
+        background: lightcoral;
+      }
+
+      li{
+        color: red;
+      }
+      .fundo-verde #sublista-01 li {
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li class="fundo-verde" id="list-01">
+        <div>Item 1</div>
+        <ul id="sublista-01">
+          <li>Subitem A</li>
+          <li>Subitem B</li>
+        </ul>
+      </li>
+      <li class="fundo-verde" id="list-02">
+        <div>Item 2</div>
+        <ul id="sublista-02">
+          <li>Subitem A</li>
+          <li>Subitem B</li>
+        </ul>
+      </li>
+      <li class="fundo-azul" id="list-03">
+        <div>Item 3</div>
+        <ul id="sublista-03">
+          <li>Subitem A</li>
+          <li>Subitem B</li>
+        </ul>
+      </li>
+    </ul>
+  </body>
+</html>
