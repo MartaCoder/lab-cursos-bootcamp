@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      div {
+        width: 200px;
+        height: 300px;
+        border: 5px solid blue;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+      }
+      #contain {
+        object-fit: contain;
+      }
+      #cover {
+        object-fit: cover;
+      }
+      #none {
+        object-fit: none;
+      }
+      #scale-down {
+        object-fit: scale-down;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Propriedade <code>object-fit</code></h1>
+    <code>object-fit: fill;</code> (Padrão)
+    <div>
+      <img
+        src="https://e7.pngegg.com/pngimages/978/632/png-clipart-pokemon-pokemon.png"
+        id="fill"
+        alt=""
+      />
+    </div>
+    <hr />
+    <code>object-fit: contain;</code>
+    <div>
+      <img
+        src="https://e7.pngegg.com/pngimages/978/632/png-clipart-pokemon-pokemon.png"
+        id="contain"
+        alt=""
+      />
+    </div>
+    <hr />
+    <code>object-fit: cover;</code>
+    <div>
+      <img
+        src="https://e7.pngegg.com/pngimages/978/632/png-clipart-pokemon-pokemon.png"
+        id="cover"
+        alt=""
+      />
+    </div>
+    <hr />
+    <code>object-fit: none;</code>
+    <div>
+      <img
+        src="https://e7.pngegg.com/pngimages/978/632/png-clipart-pokemon-pokemon.png"
+        id="none"
+        alt=""
+      />
+    </div>
+    <hr />
+    <code>object-fit: scale-down;</code>
+    <div>
+      <img
+        src="https://e7.pngegg.com/pngimages/978/632/png-clipart-pokemon-pokemon.png"
+        id="scale-down"
+        alt=""
+      />
+    </div>
+  </body>
+</html>
