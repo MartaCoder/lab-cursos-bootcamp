@@ -1,0 +1,23 @@
+div {
+    margin-bottom: 30px;
+  }
+  
+  .exemplo {
+    width: 300px;
+    height: 300px;
+    border: 10px dashed rgb(230, 255, 2);
+    color: rgb(155, 165, 12);
+    padding: 30px;
+    font-size: 40px;
+    font-weight: 900;
+    background-color: rgba(0, 0, 0, 0.342);
+    background-image: url(https://im.uniqlo.com/global-cms/spa/res9feaf94d3731cb5613a9a9e342cccf4bfr.jpg);
+    
+    background-blend-mode: difference; 
+
+  }
+  
+  #padding-box {
+    background-clip: padding-box;
+  }
+  

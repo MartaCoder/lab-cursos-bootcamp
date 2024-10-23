@@ -1,0 +1,29 @@
+body {
+  background-color: lightsteelblue;
+}
+
+div {
+  margin-bottom: 200px;
+}
+
+.exemplo {
+  width: 200px;
+  height: 200px;
+  background-image: url(../img/Pokemon\ Game\ Boy.jpeg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border: 15px dashed;
+  padding: 30px;
+}
+
+#padding-box {
+  background-origin: padding-box;
+}
+
+#border-box {
+  background-origin: border-box;
+}
+
+#content-box {
+  background-origin: content-box;
+}

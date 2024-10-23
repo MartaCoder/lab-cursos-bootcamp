@@ -1,0 +1,32 @@
+div {
+  margin-bottom: 30px;
+}
+
+.exemplo {
+  width: 300px;
+  height: 300px;
+  border: 10px dashed pink;
+  color: white;
+  padding: 30px;
+  font-size: 40px;
+  font-weight: 900;
+  background-color: rgb(0, 0, 0);
+}
+
+#padding-box {
+  background-clip: padding-box;
+}
+
+#border-box {
+  background-clip: border-box;
+}
+
+#content-box {
+  background-clip: content-box;
+}
+
+#text {
+  -webkit-background-clip: text;
+  color: transparent;
+  background-clip: text;
+}
