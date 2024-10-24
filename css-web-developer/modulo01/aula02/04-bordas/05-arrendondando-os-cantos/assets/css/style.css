@@ -1,0 +1,8 @@
+.exemplo {
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+
+    border-radius: 50px 10px 20px 80px; /*70px/50px | % */
+  }
+  

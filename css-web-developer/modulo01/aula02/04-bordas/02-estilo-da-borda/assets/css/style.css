@@ -1,0 +1,7 @@
+.exemplo {
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+    border-width: 10px;
+    border-style: solid;/*dashed, dotted, double, groove, ridge, inset, outset | podem colocar dois valores, tres, quarto*/
+}

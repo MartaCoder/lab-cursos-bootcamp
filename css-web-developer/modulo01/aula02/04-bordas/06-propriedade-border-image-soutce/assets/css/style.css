@@ -1,0 +1,18 @@
+div{
+    margin-bottom: 30px ;
+}
+
+.exemplo{
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    border: 30px solid;
+
+}
+
+#exemplo-1{
+    border-image-source: url('../img/WhatsApp\ Logo\ PNG\ Transparente\ Sem\ Fundo.jpeg') ;
+}
+#exemplo-2{
+    border-image-source: linear-gradient(red, blue);
+}

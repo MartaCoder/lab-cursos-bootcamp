@@ -13,5 +13,5 @@ div {
 
   background: url("https://images5.alphacoders.com/135/1351278.png") /*image*/
     top center / 200px 200px /*position / size*/ no-repeat /*repeat*/ fixed
-    /*attachment*/ padding-box /*origin*/ content-box /*clip*/ red /*color*/;
-}
+    /*attachment*/ padding-box /*origin*/ content-box /*clip*/ red /*color*/
+;}
