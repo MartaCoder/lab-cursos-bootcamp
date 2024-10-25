@@ -1,0 +1,21 @@
+div {
+  margin-bottom: 30px;
+}
+
+.exemplo {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(0, 0, 0);
+  border: 30px solid;
+}
+
+#exemplo-1 {
+  border-image-source: url("../img/img-estrelas.png");
+  border-image-repeat: repeat;
+  border-image-slice: 169;
+  border-image-width: 10px; /*sistema da mesma forma que as propriedades vista 10px 20px 30px 40px | % | auto*/
+}
+#exemplo-2 {
+  border-image-source: linear-gradient(red, blue);
+  border-image-slice: 10;
+}

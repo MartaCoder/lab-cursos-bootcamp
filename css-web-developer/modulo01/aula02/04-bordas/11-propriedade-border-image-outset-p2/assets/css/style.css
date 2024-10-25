@@ -1,0 +1,25 @@
+
+
+.exemplo {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(0, 0, 0);
+  border: 30px solid;
+  margin: 50px auto;
+}
+
+#exemplo-resumido{
+  border-image: url('../img/img-estrelas.png') 169 / 10px / 1 round ;/* seguir a orderm: border-image-sourcer, border-image-slice,  border-image-width, border-image-outset,  border-image-repeat*/
+}
+
+#exemplo-1 {
+  border-image-source: url("../img/img-estrelas.png");
+  border-image-slice: 169;
+  border-image-repeat:round;
+
+  border-image-outset: 30px ;/*valores: pode ser 4 valores | numerais: 1,2,3 */
+}
+#exemplo-2 {
+  border-image-source: linear-gradient(red, blue);
+  border-image-slice: 10;
+}
