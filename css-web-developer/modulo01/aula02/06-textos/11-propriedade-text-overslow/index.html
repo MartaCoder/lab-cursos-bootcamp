@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+            .exemplo{
+            width: 200px;
+
+            background-color: aquamarine;
+
+        }
+        p{
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        #exemplo-01{
+            text-overflow: clip;
+        }
+        #exemplo-02{
+            text-overflow: ellipsis;
+        }
+        #exemplo-03{
+           text-overflow: 'Ver mais'; /*somente navegado do firefox*/
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Propriedade <code>text-overflow</code></h1>
+    <p>Define a orientação do texto</p>
+
+    <i>Exemplos:</i> <br /><br />
+
+    <code>text-overflow: clip;</code>
+    <p id="exemplo-01" class="exemplo">
+        Chega de Java 
+        Não estou suportando mais
+    </p>
+
+    <code>text-overflow: ellipsis;</code>
+    <p id="exemplo-02" class="exemplo">
+        Chega de Java 
+        Não estou suportando mais
+    </p>
+
+    <code>text-overslow: string;</code>
+    <p id="exemplo-03" class="exemplo">
+        Chega de Java 
+        Não estou suportando mais
+    </p>
+  </body>
+</html>
