@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            border: 10px solid red;
+            background-color: blueviolet;
+            margin: 20px auto;
+
+            box-shadow: inset 15px 15px  30px  7px black, 25px 25px  30px  -7px black ; /*os 15px sombras horinzomtal e vertical, o 30px desfoque, o 7px  propagação, o black cor da sombra, inset no começo define a sombra dentro do elemento, tambem tem como adicionar varias camadas de sombras so separar por uma vigula*/
+        }
+
+        img{
+            object-fit: cover;
+            filter: drop-shadow(10px 10px 5px );
+        }
+    </style>
+</head>
+<body>
+    <h1>Propriedade <code>box-shadow</code></h1> 
+
+    <div></div>
+<br><br>
+    <img src="https://onlinepngtools.com/images/examples-onlinepngtools/google-logo-transparent.png" alt="">
+</body>
+</html>
