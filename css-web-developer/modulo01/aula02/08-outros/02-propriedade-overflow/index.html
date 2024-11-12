@@ -4,6 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      .exemplo {
+        background-color: orange;
+        border: 5px solid black;
+        width: 200px;
+        height: 200px;
+        padding: 10px;
+      }
+
+      #hidden {
+        overflow: hidden;
+      }
+      #scroll {
+        overflow: scroll;
+      }
+
+      #auto{
+        overflow: auto;
+      }
+      #exemplo01{
+        white-space: nowrap;
+        overflow-y: scroll;/*auto, hidden*/
+        overflow-x: hidden;
+      }
+    </style>
   </head>
   <body>
     <h1>Propriedade <code>overflow</code></h1>
@@ -13,9 +38,9 @@
       container
     </p>
 
-    <i>Exemplos:</i>
-
-    <div class="exemplos">
+    <i>Exemplos:</i><br /><br />
+    <code>overflow: visible;</code>
+    <div class="exemplo">
       <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam sint,
         voluptate, itaque id perferendis quis nesciunt voluptatem ut harum
@@ -30,6 +55,77 @@
       </p>
     </div>
 
-    <br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+    <code>overflow: hidden;</code>
+    <div id="hidden" class="exemplo">
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam sint,
+        voluptate, itaque id perferendis quis nesciunt voluptatem ut harum
+        facere consequuntur illo dignissimos? Officiis vero aut quos nesciunt
+        illum eveniet!
+      </p>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam sint,
+        voluptate, itaque id perferendis quis nesciunt voluptatem ut harum
+        facere consequuntur illo dignissimos? Officiis vero aut quos nesciunt
+        illum eveniet!
+      </p>
+    </div>
+
+    <br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+    <code>overflow: scroll;</code>
+    <div id="scroll" class="exemplo">
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam sint,
+        voluptate, itaque id perferendis quis nesciunt voluptatem ut harum
+        facere consequuntur illo dignissimos? Officiis vero aut quos nesciunt
+        illum eveniet!
+      </p>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam sint,
+        voluptate, itaque id perferendis quis nesciunt voluptatem ut harum
+        facere consequuntur illo dignissimos? Officiis vero aut quos nesciunt
+        illum eveniet!
+      </p>
+    </div>
+
+    <br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+    <code>overflow: auto;</code>
+    <div id="auto" class="exemplo">
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam sint,
+        voluptate, itaque id perferendis quis nesciunt voluptatem ut harum
+        facere consequuntur illo dignissimos? Officiis vero aut quos nesciunt
+        illum eveniet!
+      </p>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam sint,
+        voluptate, itaque id perferendis quis nesciunt voluptatem ut harum
+        facere consequuntur illo dignissimos? Officiis vero aut quos nesciunt
+        illum eveniet!
+      </p>
+    </div>
+    
+    <br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+    <code>overfloW-x e overfloW-y;</code>
+    <div id="exemplo01" class="exemplo">
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam sint,
+        voluptate, itaque id perferendis quis nesciunt voluptatem ut harum
+        facere consequuntur illo dignissimos? Officiis vero aut quos nesciunt
+        illum eveniet!
+      </p>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam sint,
+        voluptate, itaque id perferendis quis nesciunt voluptatem ut harum
+        facere consequuntur illo dignissimos? Officiis vero aut quos nesciunt
+        illum eveniet!
+      </p>
+    </div>
+
   </body>
 </html>
