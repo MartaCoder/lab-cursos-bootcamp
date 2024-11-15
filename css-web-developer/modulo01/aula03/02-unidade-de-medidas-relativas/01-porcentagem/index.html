@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .color01 {
+        background-color: rgb(122, 207, 207);
+      }
+
+      .color02 {
+        background-color: rgb(219, 155, 155);
+      }
+
+      #pixel {
+        width: 300px;
+        font-size: 30px;
+      }
+
+      #porcentagem {
+        width: 50%;
+        font-size: 30px;
+      }
+
+      #elemento-pai{
+        border: 5px solid black;
+        width: 500px;
+        font-size: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Porcentagem</h1>
+    <p>Pixel vs Porcentagem</p>
+
+    <div class="color01" id="pixel">width: 300px;</div>
+
+    <div class="color02" id="porcentagem">width: 50%;</div>
+
+    <hr />
+    <br /><br />
+    <hr />
+
+    <p>Elemento pai possui 500px de largura e um font-size de 40px.</p>
+    <div id="elemento-pai">
+        <div class="color01" id="pixel">
+            width: 300px
+        </div>
+
+        <div  class="color02" id="porcentagem" style="font-size: 50%;">
+            width: 50%
+        </div>
+    </div>
+  </body>
+</html>
