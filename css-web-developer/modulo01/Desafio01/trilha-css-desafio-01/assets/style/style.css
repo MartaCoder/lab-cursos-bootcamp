@@ -1,0 +1,52 @@
+@import url(../style/font.css);
+
+* {
+  font-family: raleway, arial;
+}
+.banner {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(49, 168, 221, 0.2),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url(../images/banner.png);
+
+  background-color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  padding-top: 60px;
+  border-bottom: 2px solid #33a8db80;
+}
+
+.logo {
+  text-align: center;
+}
+
+.banner h1 {
+  color: #00b3ff;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.banner p {
+  color: white;
+  text-align: center;
+  font-size: 17px;
+  width: 34%;
+  margin: 0 auto;
+
+}
+
+.banner button {
+  background-color: transparent;
+  color: #00b3ff;
+  text-transform: uppercase;
+  border: 2px solid rgb(0, 153, 255);
+  padding: 15px 30px;
+  margin: 20px 550px;
+  font-size: 14px;
+  font-weight: bold;
+}
