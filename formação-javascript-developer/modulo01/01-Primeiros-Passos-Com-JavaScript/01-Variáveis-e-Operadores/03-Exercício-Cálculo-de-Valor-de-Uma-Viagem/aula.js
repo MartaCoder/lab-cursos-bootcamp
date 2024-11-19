@@ -13,4 +13,4 @@ let distancia = 300;
 
 let gasto = (precoLitro / litroKM) * distancia;
 
-console.log(`O gasto de combustivel será $ ${gasto}`);
+console.log(`O gasto de combustivel será $ ${gasto.toFixed(2)}`);
