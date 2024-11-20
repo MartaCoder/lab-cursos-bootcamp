@@ -87,7 +87,7 @@ console.log(
 const preco = 200.0;
 /*
 Pix e dinheiro = 15% desc;
-Debito = 10%;
+Debito = 10% desc;
 2x = preço normal;
 Acima de 2x = juros 10%.
 */
