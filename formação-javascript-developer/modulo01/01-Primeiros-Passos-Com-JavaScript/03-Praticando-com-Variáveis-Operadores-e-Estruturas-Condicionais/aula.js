@@ -48,10 +48,10 @@ IMC em adultos condiçoes :
 - Acima de 40 obesidade grave
  */
 
-const peso = 200.0;
+const peso = 64.0;
 const altura = 1.69;
 
-const imc = peso / (altura * 2);
+const imc = peso / (altura * altura);
 
 console.log(`Seu IMC é ${imc.toFixed(2)}`);
 
