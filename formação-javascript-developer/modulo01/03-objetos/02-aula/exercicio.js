@@ -56,23 +56,30 @@ console.log(`O IMC de ${jose.nome} ${jose.imc(70, 1.75).toFixed(2)}`);
 const flavio = new Pessoa("Flavio", 60, 1.68);
 console.log(`O IMC de ${flavio.nome} é ${flavio.imc(60, 1.68).toFixed(2)}`);
 
+/*********************************************************************************************** */
 class PessoaIMC {
+  // Atributos da classe
   nome;
   peso;
   altura;
 
+  // Construtor da classe
   constructor(nome, peso, altura) {
+    // Inicializa os atributos do objeto
     this.nome = nome;
     this.peso = peso;
     this.altura = altura;
   }
 
+  // Método para calcular o IMC
   imcPes() {
-    //metodo
+    // Fórmula para calcular o IMC
     return this.peso / Math.pow(this.altura, 2);
   }
 
+  // Método para classificar a pessoa de acordo com o IMC
   classificarPessoa() {
+    // Lógica para classificação
     if (this.imcPes() < 18.5) {
       return `Baixo Peso`;
     } else if (this.imcPes() >= 18.5 && this.imcPes() <= 24.9) {
@@ -91,3 +98,6 @@ console.log(
     .imcPes()
     .toFixed(2)}, e voce está com ${julio.classificarPessoa()}`
 );
+/*new PessoaIMC: Cria uma nova instância da classe PessoaIMC 
+e atribui a um objeto chamado julio. Os valores entre parênteses 
+são passados para o construtor. */
